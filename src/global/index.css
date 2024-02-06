@@ -1,0 +1,39 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  /* color: #475467; */
+  color: #101828;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+/* REMOVE THE ARROW UP-DOWN IN INPUT TYPE "NUMBER" */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Custom style for otp inputs */
+.custom__style input {
+  font-size: 30px;
+  font-weight: 600;
+  height: 30px;
+  color: #475467;
+}
+.custom__style input:focus {
+  /* border-radius: 5px; */
+}
